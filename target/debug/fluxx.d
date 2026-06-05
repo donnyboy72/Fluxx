@@ -1,1 +1,1 @@
-C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\fluxx.exe: C:\Users\donav\SWE\my_rust\rust_projects\fluxx\src\main.rs
+C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\fluxx.exe: C:\Users\donav\SWE\my_rust\rust_projects\fluxx\src\editor.rs C:\Users\donav\SWE\my_rust\rust_projects\fluxx\src\main.rs
