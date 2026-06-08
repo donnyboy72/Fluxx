@@ -5,3 +5,6 @@ C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\deps\libfluxx-488634
 src\main.rs:
 src\editor.rs:
 src\editor\terminal.rs:
+
+# env-dep:CARGO_PKG_NAME=fluxx
+# env-dep:CARGO_PKG_VERSION=0.1.0
