@@ -1,12 +1,440 @@
-   0.043967400s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\editor.rs"
-   0.043984700s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\target\\debug\\.fingerprint\\fluxx-1e4b05301553a1b5\\dep-bin-fluxx"
-   0.043990400s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13425364440, nanos: 694733500 } < FileTime { seconds: 13425364514, nanos: 4007900 }
-   0.044134700s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: fingerprint dirty for fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx)/Check { test: false }/TargetInner { name: "fluxx", doc: true, ..: with_path("C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\main.rs", Edition2024) }
-   0.044149800s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\target\\debug\\.fingerprint\\fluxx-1e4b05301553a1b5\\dep-bin-fluxx", reference_mtime: FileTime { seconds: 13425364440, nanos: 694733500 }, stale: "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\editor.rs", stale_mtime: FileTime { seconds: 13425364514, nanos: 4007900 } }))
-   0.051570500s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\editor.rs"
-   0.051581700s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\target\\debug\\.fingerprint\\fluxx-4886341cd70b6263\\dep-test-bin-fluxx"
-   0.051586800s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13425364440, nanos: 694733500 } < FileTime { seconds: 13425364514, nanos: 4007900 }
-   0.051704500s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: fingerprint dirty for fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx)/Check { test: true }/TargetInner { name: "fluxx", doc: true, ..: with_path("C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\main.rs", Edition2024) }
-   0.051717700s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\target\\debug\\.fingerprint\\fluxx-4886341cd70b6263\\dep-test-bin-fluxx", reference_mtime: FileTime { seconds: 13425364440, nanos: 694733500 }, stale: "C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\editor.rs", stale_mtime: FileTime { seconds: 13425364514, nanos: 4007900 } }))
+   0.101377500s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: fingerprint error for fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx)/Check { test: false }/TargetInner { name: "fluxx", doc: true, ..: with_path("C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\main.rs", Edition2024) }
+   0.101420400s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\fluxx-1e4b05301553a1b5\bin-fluxx`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.114730300s  INFO prepare_target{force=false package_id=crossterm v0.29.0 target="crossterm"}: cargo::core::compiler::fingerprint: fingerprint error for crossterm v0.29.0/Check { test: false }/TargetInner { ..: lib_target("crossterm", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\crossterm-0.29.0\\src\\lib.rs", Edition2021) }
+   0.115129300s  INFO prepare_target{force=false package_id=crossterm v0.29.0 target="crossterm"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\crossterm-22adbf54a2fcc77d\lib-crossterm`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.115709000s  INFO prepare_target{force=false package_id=bitflags v2.12.1 target="bitflags"}: cargo::core::compiler::fingerprint: fingerprint error for bitflags v2.12.1/Check { test: false }/TargetInner { ..: lib_target("bitflags", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\bitflags-2.12.1\\src\\lib.rs", Edition2021) }
+   0.115723700s  INFO prepare_target{force=false package_id=bitflags v2.12.1 target="bitflags"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\bitflags-9f6db4e7ae7e909f\lib-bitflags`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.116242000s  INFO prepare_target{force=false package_id=crossterm_winapi v0.9.1 target="crossterm_winapi"}: cargo::core::compiler::fingerprint: fingerprint error for crossterm_winapi v0.9.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("crossterm_winapi", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\crossterm_winapi-0.9.1\\src\\lib.rs", Edition2018) }
+   0.116255000s  INFO prepare_target{force=false package_id=crossterm_winapi v0.9.1 target="crossterm_winapi"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\crossterm_winapi-4f89c28328566487\lib-crossterm_winapi`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.116721500s  INFO prepare_target{force=false package_id=winapi v0.3.9 target="winapi"}: cargo::core::compiler::fingerprint: fingerprint error for winapi v0.3.9/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("winapi", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\winapi-0.3.9\\src\\lib.rs", Edition2015) }
+   0.116733800s  INFO prepare_target{force=false package_id=winapi v0.3.9 target="winapi"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\winapi-8cfe4ceed09ee040\lib-winapi`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.118186700s  INFO prepare_target{force=false package_id=derive_more v2.1.1 target="derive_more"}: cargo::core::compiler::fingerprint: fingerprint error for derive_more v2.1.1/Check { test: false }/TargetInner { ..: lib_target("derive_more", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\derive_more-2.1.1\\src\\lib.rs", Edition2021) }
+   0.118199600s  INFO prepare_target{force=false package_id=derive_more v2.1.1 target="derive_more"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\derive_more-edd7f516f8bcefeb\lib-derive_more`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.121800000s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot v0.12.5/Check { test: false }/TargetInner { ..: lib_target("parking_lot", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\parking_lot-0.12.5\\src\\lib.rs", Edition2021) }
+   0.121814700s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\parking_lot-886590eb4288dd1d\lib-parking_lot`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.122289500s  INFO prepare_target{force=false package_id=lock_api v0.4.14 target="lock_api"}: cargo::core::compiler::fingerprint: fingerprint error for lock_api v0.4.14/Check { test: false }/TargetInner { ..: lib_target("lock_api", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\lock_api-0.4.14\\src\\lib.rs", Edition2021) }
+   0.122301900s  INFO prepare_target{force=false package_id=lock_api v0.4.14 target="lock_api"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\lock_api-9ac6eab2f5141dfe\lib-lock_api`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.122827500s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint: fingerprint error for scopeguard v1.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("scopeguard", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\scopeguard-1.2.0\\src\\lib.rs", Edition2015) }
+   0.122839800s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\scopeguard-133fb11915b95a3d\lib-scopeguard`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.123331400s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot_core v0.9.12/Check { test: false }/TargetInner { ..: lib_target("parking_lot_core", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\parking_lot_core-0.9.12\\src\\lib.rs", Edition2021) }
+   0.123345800s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\parking_lot_core-74544d7cb356c74c\lib-parking_lot_core`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.123853400s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.4/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cfg-if-1.0.4\\src\\lib.rs", Edition2018) }
+   0.123865200s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\cfg-if-d0202b3c1f745d2b\lib-cfg_if`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.125200400s  INFO prepare_target{force=false package_id=smallvec v1.15.1 target="smallvec"}: cargo::core::compiler::fingerprint: fingerprint error for smallvec v1.15.1/Check { test: false }/TargetInner { ..: lib_target("smallvec", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\smallvec-1.15.1\\src\\lib.rs", Edition2018) }
+   0.125212500s  INFO prepare_target{force=false package_id=smallvec v1.15.1 target="smallvec"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\smallvec-0d425d85eb41ce94\lib-smallvec`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.125687800s  INFO prepare_target{force=false package_id=windows-link v0.2.1 target="windows_link"}: cargo::core::compiler::fingerprint: fingerprint error for windows-link v0.2.1/Check { test: false }/TargetInner { ..: lib_target("windows_link", ["lib"], "C:\\Users\\donav\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\windows-link-0.2.1\\src\\lib.rs", Edition2021) }
+   0.125699600s  INFO prepare_target{force=false package_id=windows-link v0.2.1 target="windows_link"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\windows-link-f20c8d64b953bdfa\lib-windows_link`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.126168400s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint: fingerprint error for fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx)/Check { test: true }/TargetInner { name: "fluxx", doc: true, ..: with_path("C:\\Users\\donav\\SWE\\my_rust\\rust_projects\\fluxx\\src\\main.rs", Edition2024) }
+   0.126180300s  INFO prepare_target{force=false package_id=fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx) target="fluxx"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\donav\SWE\my_rust\rust_projects\fluxx\target\debug\.fingerprint\fluxx-4886341cd70b6263\test-bin-fluxx`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking smallvec v1.15.1
+    Checking cfg-if v1.0.4
+    Checking windows-link v0.2.1
+    Checking scopeguard v1.2.0
+    Checking bitflags v2.12.1
+    Checking winapi v0.3.9
+    Checking derive_more v2.1.1
+    Checking lock_api v0.4.14
+    Checking parking_lot_core v0.9.12
+    Checking parking_lot v0.12.5
+    Checking crossterm_winapi v0.9.1
+    Checking crossterm v0.29.0
     Checking fluxx v0.1.0 (C:\Users\donav\SWE\my_rust\rust_projects\fluxx)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.17s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.42s
