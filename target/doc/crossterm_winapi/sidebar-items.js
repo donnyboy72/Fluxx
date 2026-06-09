@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["EventFlags","HandleType","InputRecord"],"fn":["coord_result","handle_result","nonnull_handle_result","result"],"struct":["ButtonState","Console","ConsoleMode","ControlKeyState","Coord","FontInfo","Handle","KeyEventRecord","MouseEvent","ScreenBuffer","ScreenBufferInfo","Semaphore","Size","WindowPositions"]};
