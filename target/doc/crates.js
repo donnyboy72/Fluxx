@@ -1,2 +1,0 @@
-window.ALL_CRATES = ["bitflags","cfg_if","convert_case","crossterm","crossterm_winapi","derive_more","derive_more_impl","document_features","fluxx","litrs","lock_api","parking_lot","parking_lot_core","proc_macro2","quote","scopeguard","smallvec","syn","unicode_ident","unicode_segmentation","winapi","windows_link"];
-//{"start":21,"fragment_lengths":[10,9,15,12,19,14,19,20,8,8,11,14,19,14,8,13,11,6,16,23,9,15]}
